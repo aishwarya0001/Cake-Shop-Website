@@ -1,0 +1,460 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding:0px;
+}
+html
+{
+    scroll-behavior: smooth;
+    
+}
+a
+{
+    text-decoration: none;
+}
+body{
+    font-family: 'RocknRoll One', sans-serif;
+    color: white;
+    /* background-color: #fff6f9; */
+}
+#home{
+    background: linear-gradient(rgba(0, 119, 255, 0.281),rgba(212, 0, 255, 0.274)),url('rsc/9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    /* position:absolute; */
+    padding:50px;
+}
+#navi{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color:transparent;
+    padding: 27px;
+    margin:-50px;
+    
+}
+#navi a{
+    color:white;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:2px solid transparent;
+    border-radius: 20px;
+}
+.left {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight:1000;
+    font-size: 28px;
+    margin-top: -15px;
+    font-family: 'Crushed', cursive;
+    color: black;
+}
+#right
+{
+    /* position: absolute; */
+    margin-left: 380px;
+    word-spacing: 30px;
+    font-size: 17px;
+}
+#right :nth-child(1)
+{
+    background-color:transparent;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border:2px solid white;
+    border-radius: 20px;
+}
+#right :nth-child(1):hover
+{
+    font-weight: 500 !important;
+    cursor: default;
+}
+#right :nth-child(3), #right :nth-child(5)
+{
+    word-spacing: 3px;
+}
+.left img
+{
+    width: 40px;
+    height: 40px;
+    margin-bottom: -5px;
+}
+#welcome
+{
+    position: relative;
+    text-align: center;
+    padding:20px;
+    margin-top:210px;
+    border-radius: 40px;
+}
+#welcome p{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+#welcome p::first-line{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+#button
+{
+    font-family: 'RocknRoll One', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 22px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+}
+
+#footer table,tr,td
+{
+    padding-right: 30px;
+}
+#footer img
+{
+    margin-top: 10px;
+    width: 24px;
+    height: 24px;
+}
+#footer p
+{
+    /* position: fixed; */
+    margin-left: 20px;
+    font-size: 20px;
+}
+#footer
+{
+    margin-left: 650px;
+    margin-top: 196px;
+    margin-bottom: -43px;
+}
+#navi.scroll
+{
+    background-color:rgb(243, 0, 122);
+    box-shadow: rgba(243, 0, 122, 0.253) 0px 5px 15px 0px;
+    transition: 1s;
+}
+#navi.scroll a
+{
+    border:2px solid transparent;
+}
+#navi.scroll a:hover
+{
+    cursor: pointer;
+}
+#navi.scroll #right :nth-child(2)
+{
+    border:2px solid white;
+    font-weight: 500; 
+}
+#navi.scroll #right :nth-child(1):hover
+{
+    font-weight: 900 !important; 
+}
+
+#navi.scroll #right :nth-child(2):hover 
+{
+    font-weight: 500 !important; 
+    cursor: default;
+}
+#navi.scroll .left a img
+{
+    content: url('rsc/whitelogo.png');
+}
+#about
+{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin:100px;
+    padding:50px;
+}
+#text h1
+{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(243, 0, 122);
+}
+#text p{
+    margin-top: 10px;
+}
+#text{
+    height:500px;
+    width:500px;
+    padding: 50px;
+    margin-top:100px;
+    border-radius: 5px;
+    box-shadow: rgba(243, 0, 122, 0.295) 0px 5px 15px 0px;
+}
+#about img
+{
+    width: 500px;
+    height: 300px;
+    margin-left: 300px;
+    margin-top:200px;
+    border-radius: 5px;
+    box-shadow: rgba(243, 0, 122, 0.342) 0px 5px 15px 0px;
+}
+#navi.scroll2
+{
+    background-color:black;
+    box-shadow: rgba(63, 63, 63, 0.171) 0px 5px 15px 0px;
+    transition: 1s;
+}
+#navi.scroll2 a
+{
+    border:2px solid transparent;
+}
+#navi.scroll2 a:hover
+{
+    cursor: pointer;
+}
+#navi.scroll2 #right :nth-child(3)
+{
+    border:2px solid white;
+}
+#navi.scroll2 #right :nth-child(3):hover
+{
+    font-weight: 500 !important;
+    cursor: default;
+}
+#navi.scroll2 #right :nth-child(1):hover
+{
+    font-weight: 900 !important;
+}
+#services
+{
+    margin:100px;
+    padding: 150px;
+    /* margin-bottom: 200px; */
+}
+#service
+{
+    /* margin-left: 100px; */
+    box-shadow: rgba(51, 51, 51, 0.192) 0px 5px 15px 0px;
+    width:1000px;
+    height: 500px;
+    background-image: url('rsc/service1.png');
+    animation-name: anim;
+    animation-direction: normal; 
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes anim
+{
+    15%
+    {
+        background-image: url('rsc/service1.png');
+    }
+    30%
+    {
+        background-image: url('rsc/service2.png');
+    }
+    45%
+    {
+        background-image: url('rsc/service2.png');
+    }
+    60%
+    {
+        background-image: url('rsc/service3.png');
+    }
+    75%
+    {
+        background-image: url('rsc/service3.png');
+    }
+    100%
+    {
+        background-image: url('rsc/service1.png');
+    }
+}
+#navi.scroll3
+{
+    background-color: white;
+    box-shadow: rgba(63, 63, 63, 0.171) 0px 5px 15px 0px;
+    transition: 1s;
+}
+#navi.scroll3 #right :nth-child(4)
+{
+    border:2px solid black;
+}
+#navi.scroll3 a
+{
+    color: black;
+    border:2px solid transparent;
+}
+#navi.scroll3 a:hover
+{
+    cursor: pointer;
+}
+#navi.scroll3 .left a img
+{
+    content: url('rsc/blacklogo.png');
+}
+#navi.scroll3 #right :nth-child(4):hover
+{
+    font-weight: 500 !important;
+    cursor: default;
+}
+#navi.scroll3 #right :nth-child(1):hover
+{
+    font-weight: 900 !important;
+}
+#products
+{
+    color:black;
+    text-align: center;
+    margin-left: 240px;
+}
+#product-list img
+{
+    width:200px;
+    height: 180px;
+    border-radius: 5px;
+}
+#product-list table
+{
+    border-spacing: 100px;
+}
+#product-list td
+{
+    padding:15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+#product-list td p
+{
+    margin-top: 5px;
+}
+#navi.scroll4
+{
+    background-color: rgb(201, 65, 255);
+    box-shadow: rgba(201, 65, 255, 0.226) 0px 4px 16px, rgba(201, 65, 255, 0.247) 0px 8px 32px;
+    transition: 0.5s;
+}
+#navi.scroll4 #right :nth-child(5)
+{
+    border:2px solid white;
+}
+#navi.scroll4 a
+{
+    color: white;
+    border:2px solid transparent;
+}
+#navi.scroll4 a:hover
+{
+    cursor: pointer;
+}
+#navi.scroll4 .left a img
+{
+    content: url('rsc/whitelogo.png');
+}
+#navi.scroll4 #right :nth-child(5):hover
+{
+    font-weight: 500 !important;
+    cursor: default;
+}
+#navi.scroll4 #right :nth-child(1):hover
+{
+    font-weight: 900 !important;
+}
+#contact-us
+{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact-card 
+{
+    color:rgb(201, 65, 255);
+    margin:200px;
+    padding:30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(201, 65, 255, 0.301) 0px 4px 16px, rgba(201, 65, 255, 0.336) 0px 8px 32px;
+}
+#contact-card div
+{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+#contact-card h1
+{
+    text-align: center;
+}
+footer
+{
+    background-color: #c941ff;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    padding:5px;
+    
+}
+footer img
+{
+    width: 25px;
+    height: 25px;
+}
+footer .left
+{
+    padding-left: 20px;
+    padding-top: 27px;
+    font-size: 25px;
+}
+footer .left a
+{
+    color:white;
+}
+footer .left img
+{
+    height: 30px;
+    width:30px;
+}
+footer #copy
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 500px;
+   
+} 
+footer #social
+{
+  padding-left: 470px;
+  text-align: center;
+}
+footer #social p
+{
+  margin-left: -20px;
+  font-size: 20px;
+  
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #fcfcfc; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(172, 172, 172); 
+    border-radius: 10px;
+}
